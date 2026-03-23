@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ─────────────────────────────────────────── */
+:root {
+  /* Brand — Navy + Gold (Dunmore Coat of Arms) */
+  --color-primary:       #1a2f5e;
+  --color-primary-dark:  #111f3f;
+  --color-primary-light: #2a4a8e;
+  --color-accent:        #c9a227;
+  --color-accent-light:  #e8be45;
+  --color-accent-dark:   #a8841f;
+
+  /* Surfaces */
+  --color-surface:       #ffffff;
+  --color-surface-alt:   #f8f9fc;
+  --color-surface-dark:  #0f1929;
+
+  /* Text */
+  --color-text:          #0f172a;
+  --color-text-muted:    #64748b;
+  --color-border:        #e2e8f0;
+
+  /* Fluid typography */
+  --text-xs:    clamp(0.75rem,  1.5vw,  0.875rem);
+  --text-sm:    clamp(0.875rem, 1.75vw, 1rem);
+  --text-base:  clamp(1rem,     2vw,    1.125rem);
+  --text-lg:    clamp(1.125rem, 2.25vw, 1.375rem);
+  --text-xl:    clamp(1.25rem,  2.5vw,  1.75rem);
+  --text-2xl:   clamp(1.5rem,   3vw,    2.25rem);
+  --text-3xl:   clamp(2rem,     4vw,    3rem);
+  --text-4xl:   clamp(2.5rem,   5vw,    3.75rem);
+  --text-hero:  clamp(2.75rem,  6vw,    5rem);
+
+  /* Radii */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.10);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,.13);
+}
+
+/* ─── Base Reset ─────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: var(--color-text);
+    background: var(--color-surface);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+}
+
+/* ─── Skip Link ──────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: top 200ms ease;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ─── Animations ─────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeUp 0.65s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes barsRise {
+  from { transform: scaleY(0); opacity: 0; }
+  to   { transform: scaleY(1); opacity: 1; }
+}
+
+@keyframes shieldPulse {
+  0%, 100% { transform: scale(1);    opacity: 1;   }
+  50%       { transform: scale(1.07); opacity: 0.85; }
+}
+
+@keyframes writeIn {
+  from { stroke-dashoffset: 120; opacity: 0.2; }
+  to   { stroke-dashoffset: 0;   opacity: 1;   }
+}
+
+@keyframes medalBounce {
+  0%, 100% { transform: translateY(0)    rotate(0deg); }
+  30%       { transform: translateY(-8px) rotate(-5deg); }
+  60%       { transform: translateY(-4px) rotate(3deg); }
+}
+
+@keyframes livePing {
+  0%   { transform: scale(1);   opacity: 0.8; }
+  70%  { transform: scale(2.2); opacity: 0;   }
+  100% { transform: scale(2.2); opacity: 0;   }
+}
+
+.live-ping {
+  animation: livePing 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-in {
+    animation: none;
+    opacity: 1;
+  }
+  .live-ping {
+    animation: none;
+  }
+  .fire-marquee-track {
+    animation: none;
+  }
+}
+
+/* ─── Glassmorphism Card Shimmer ─────────────────────────────── */
+@keyframes cardShimmer {
+  0%   { transform: translateX(-160%) skewX(-20deg); }
+  100% { transform: translateX(260%)  skewX(-20deg); }
+}
+
+.glass-card {
+  position: relative;
+}
+
+.glass-card-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.09) 50%,
+    transparent 65%
+  );
+  transform: translateX(-160%) skewX(-20deg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.glass-card:hover .glass-card-shimmer {
+  animation: cardShimmer 0.75s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass-card:hover .glass-card-shimmer {
+    animation: none;
+  }
+}
+
+/* ─── Fire Banner Marquee ────────────────────────────────────── */
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+.fire-marquee {
+  display: flex;
+  width: max-content;
+}
+
+.fire-marquee-track {
+  animation: marqueeScroll 30s linear infinite;
+}
+
+/* ─── Section spacing ────────────────────────────────────────── */
+@layer utilities {
+  .section-padding {
+    padding-block: clamp(4rem, 8vw, 7rem);
+  }
+
+  .container-wide {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 5vw, 2rem);
+  }
+}

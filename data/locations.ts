@@ -1,0 +1,48 @@
+import type { Location } from '@/types'
+
+export const locations: Location[] = [
+  {
+    id: 'somerset-west',
+    name: 'Head Office — Somerset West',
+    address: 'Raithby',
+    city: 'Somerset West',
+    province: 'Western Cape',
+    postalCode: '7130',
+    phone: '(+27) (0)21 842 3021',
+    email: 'admin@dunmore.co.za',
+    mapUrl: 'https://maps.google.com/?q=Raithby,+Somerset+West,+7130,+South+Africa',
+    isHeadOffice: true,
+  },
+  {
+    id: 'cape-town',
+    name: 'Cape Town',
+    address: 'Cape Town',
+    city: 'Cape Town',
+    province: 'Western Cape',
+    postalCode: '',
+    phone: '+27 (0)84 588 4121',
+    email: 'admin@dunmore.co.za',
+    isHeadOffice: false,
+  },
+  {
+    id: 'west-coast',
+    name: 'West Coast Satellite Office',
+    address: '528 Industry Road',
+    city: 'Hopefield',
+    province: 'Western Cape',
+    postalCode: '7355',
+    phone: '+27 (0)84 588 4121',
+    email: 'admin@dunmore.co.za',
+    mapUrl: 'https://maps.google.com/?q=528+Industry+Road,+Hopefield,+7355,+South+Africa',
+    isHeadOffice: false,
+  },
+  {
+    id: 'location-4',
+    name: 'Location 4',
+    address: 'Address TBC',
+    city: 'TBC',
+    province: 'TBC',
+    postalCode: '',
+    isHeadOffice: false,
+  },
+]
