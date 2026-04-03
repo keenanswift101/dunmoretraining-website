@@ -49,8 +49,8 @@ const contactDetails = [
       </svg>
     ),
     label: 'Email',
-    lines: ['admin@dunmore.co.za'],
-    link: { href: 'mailto:admin@dunmore.co.za', label: 'Send email', external: false },
+    lines: ['donny@dunmore.co.za', 'admin@dunmore.co.za'],
+    link: { href: 'mailto:donny@dunmore.co.za', label: 'Send email', external: false },
   },
   {
     icon: (

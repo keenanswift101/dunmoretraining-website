@@ -106,8 +106,9 @@ export default function ServicesPage() {
 
           <div className="prose-like space-y-4 text-slate-600 leading-relaxed mb-8">
             <p>
-              DUNMORE provides <strong className="text-primary">qualified standby medic teams</strong> staffed by registered Emergency
-              First Aid Responders (EFAR) for schools, corporate organisations, sporting bodies, and event coordinators across the Western Cape.
+              DUNMORE provides <strong className="text-primary">qualified standby medic teams</strong> staffed by registered{' '}
+              <a href="https://www.efarsystem.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary-dark transition-colors">Emergency
+              First Aid Responders (EFAR)</a> for schools, corporate organisations, sporting bodies, and event coordinators across the Western Cape.
             </p>
             <p>
               Under the <strong className="text-primary">Occupational Health and Safety Act 85 of 1993</strong> and applicable municipal

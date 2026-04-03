@@ -147,7 +147,20 @@ export default async function ProgramDetailPage({ params }: PageProps) {
                   {(program.unitStandard || program.qctoCode) && (
                     <div className="flex justify-between items-center py-2 border-b border-slate-100">
                       <dt className="text-slate-500 font-medium">{isQCTO ? 'QCTO Code' : 'Unit Standard'}</dt>
-                      <dd className="font-mono font-bold text-slate-700">{program.qctoCode || program.unitStandard}</dd>
+                      <dd className="font-mono font-bold text-slate-700">
+                        {isQCTO ? (
+                          program.qctoCode
+                        ) : (
+                          <a
+                            href={`https://regqs.saqa.org.za/showUnitStandard.php?id=${program.unitStandard}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:text-primary transition-colors"
+                          >
+                            {program.unitStandard}
+                          </a>
+                        )}
+                      </dd>
                     </div>
                   )}
                   {program.accreditationNumber && (

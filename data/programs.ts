@@ -11,11 +11,11 @@ export const programs: Program[] = [
     description:
       'Perform Basic Life Support and first aid procedures. Equips learners with essential skills to respond to medical emergencies in the workplace and community.',
     outcomes: [
-      'Perform CPR on adults, children and infants',
-      'Manage bleeding, burns and wounds',
-      'Treat shock and loss of consciousness',
-      'Respond to choking and airway emergencies',
-      'Apply basic bandaging and immobilisation techniques',
+      'Demonstrate an understanding of emergency scene management',
+      'Demonstrate an understanding of elementary anatomy and physiology',
+      'Assess an emergency situation',
+      'Apply First Aid procedures to life-threatening situations',
+      'Treat common injuries',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led (Theory + Practical)',
@@ -32,10 +32,13 @@ export const programs: Program[] = [
     description:
       'An intermediate first aid course building on Level 1, covering complex emergency management scenarios.',
     outcomes: [
-      'Advanced wound management and splinting',
-      'Patient assessment and vital signs monitoring',
-      'Management of medical emergencies',
-      'Scene assessment and casualty prioritisation',
+      'Demonstrate the principles of primary emergency care in the workplace',
+      'Sustain a basic level of preparedness for health emergencies in the workplace',
+      'Assess and manage an emergency scene in the workplace',
+      'Demonstrate primary emergency life support for adults, children and infants',
+      'Explain and manage shock',
+      'Conduct secondary assessment and provide appropriate primary emergency care',
+      'Keep records of the incident/accident',
     ],
     duration: '3 days',
     delivery: 'Instructor-Led (Theory + Practical)',
@@ -52,10 +55,12 @@ export const programs: Program[] = [
     description:
       'Advanced first aid training for designated first aiders and health and safety officers requiring comprehensive emergency response skills.',
     outcomes: [
-      'Advanced life support techniques',
-      'Management of complex trauma scenarios',
-      'Triage and multi-casualty management',
-      'Documentation and reporting requirements',
+      'Explain the principles of advanced first aid in emergencies',
+      'Demonstrate an advanced level of preparedness for sudden illness or emergency',
+      'Assess and manage an emergency scene or disaster',
+      'Describe anatomy and explain physiology of human body systems',
+      'Apply primary first aid life support for all age groups',
+      'Explain causes of shock and emergency treatment',
     ],
     duration: '5 days',
     delivery: 'Instructor-Led (Theory + Practical)',
@@ -186,10 +191,8 @@ export const programs: Program[] = [
     description:
       'Understand and apply occupational health and safety legislation and practices in the workplace.',
     outcomes: [
-      'Understand the OHS Act requirements',
-      'Identify and report workplace hazards',
-      'Implement basic risk control measures',
-      'Know employer and employee OHS responsibilities',
+      'Explain the duties of employers and employees and identify the safety representative and first aid person',
+      'Demonstrate knowledge of hazards, safety and emergency procedures in forestry operations',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led',
@@ -206,10 +209,9 @@ export const programs: Program[] = [
     description:
       'Training for elected health and safety representatives covering roles, responsibilities and legal obligations under the OHS Act.',
     outcomes: [
-      'Understand the role and functions of a H&S Representative',
-      'Conduct workplace inspections',
-      'Investigate incidents and accidents',
-      'Participate in Health & Safety Committee meetings',
+      'Describe and explain general safe working practices and procedures',
+      'Explain basic safety requirements',
+      'Explain preventative measures',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led',
@@ -226,10 +228,12 @@ export const programs: Program[] = [
     description:
       'Raise awareness of HIV/AIDS in the workplace, covering transmission, prevention, employee rights and company policy implications.',
     outcomes: [
-      'Understand HIV/AIDS transmission and prevention',
-      'Know employee rights and workplace policies',
-      'Reduce stigma and discrimination',
-      'Access available support and treatment options',
+      'Describe and explain the nature of HIV/AIDS',
+      'Describe transmission routes',
+      'Describe and explain practices which reduce and prevent risk of infection',
+      'Reflect on attitudes toward HIV and AIDS',
+      'Describe and analyse beliefs and attitudes toward HIV and AIDS in the workplace',
+      'Outline the rights of people living with HIV and AIDS',
     ],
     duration: '1 day',
     delivery: 'Instructor-Led',
@@ -248,10 +252,12 @@ export const programs: Program[] = [
     description:
       'Understand fire behaviour, prevention and basic fire response procedures to reduce fire risk in the workplace.',
     outcomes: [
-      'Understand the chemistry of fire',
-      'Identify fire extinguisher types and their uses',
-      'Evacuate safely during a fire emergency',
-      'Use portable fire extinguishers correctly',
+      'Discuss and explain procedures for dealing with fires in the workplace',
+      'Identify the type of fire, its context and select the appropriate fire fighting procedure',
+      'Identify, select and check appropriate fire fighting and safety equipment',
+      'Fight containable/extinguishable fires',
+      'Retreat from fire site and hand over to appropriate personnel',
+      'Report/record status of fire and equipment',
     ],
     duration: '1 day',
     delivery: 'Instructor-Led (Theory + Practical)',
@@ -268,10 +274,9 @@ export const programs: Program[] = [
     description:
       'Training for designated fire marshalls covering emergency evacuation procedures, roles and responsibilities.',
     outcomes: [
-      'Understand fire marshall duties and responsibilities',
-      'Coordinate workplace evacuation procedures',
-      'Conduct fire drills and post-drill assessments',
-      'Communicate effectively during emergencies',
+      'Identify and assess the emergency or safety situation',
+      'Initiate course of action to deal with emergency or safety situation',
+      'Implement and supervise an evacuation in accordance with workplace procedures and relevant legislation',
     ],
     duration: '1 day',
     delivery: 'Instructor-Led (Theory + Practical)',
@@ -288,10 +293,8 @@ export const programs: Program[] = [
     description:
       'Identify, explain and demonstrate standard safety procedures during active wildfire suppression operations.',
     outcomes: [
-      'Identify wildfire behaviour and spread patterns',
-      'Apply personal protective equipment correctly',
-      'Follow safety procedures on the fire line',
-      'Communicate fire progress and hazards',
+      'Identify unsafe acts and conditions and explain standard safety rules applied to overcome dangerous fire situations',
+      'Demonstrate safety procedures in wildfire suppression situations',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led (Theory + Field Practical)',
@@ -308,10 +311,11 @@ export const programs: Program[] = [
     description:
       'Contribute to the suppression of wildfires at basic fire fighting level, including safe use of fire fighting tools.',
     outcomes: [
-      'Use fire fighting tools and equipment safely',
-      'Construct fire breaks and containment lines',
-      'Work as part of a fire fighting team',
-      'Follow instructions from fire fighting supervisors',
+      'Identify and explain basic features of fire behaviour for safe and effective fire suppression',
+      'Perform manual methods and procedures for extinguishing wildfires',
+      'Communicate using verbal and hand signalled instructions',
+      'Identify and demonstrate the use of water hose equipment',
+      'Conduct mop-up procedures',
     ],
     duration: '3 days',
     delivery: 'Instructor-Led (Theory + Field Practical)',
@@ -367,10 +371,9 @@ export const programs: Program[] = [
     description:
       'Safe operation of a brushcutter for vegetation management and clearing.',
     outcomes: [
-      'Identify brushcutter types and components',
-      'Operate a brushcutter safely',
-      'Apply correct cutting techniques',
-      'Perform routine maintenance',
+      'Prepare to operate the brushcutter',
+      'Demonstrate operating techniques and methods of brush cutting',
+      'Maintain equipment',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led (Theory + Practical)',
@@ -387,10 +390,11 @@ export const programs: Program[] = [
     description:
       'Cut felled timber using a chainsaw and perform full maintenance on the equipment.',
     outcomes: [
-      'Cut felled timber accurately and safely',
-      'Sharpen and tension the chainsaw chain',
-      'Service chainsaw components',
-      'Identify and report equipment faults',
+      'Demonstrate knowledge of chainsaw parts and basic mechanics',
+      'Demonstrate knowledge of safety during chainsaw use',
+      'Prepare and start a chainsaw',
+      'Cut felled timber with a chainsaw',
+      'Carry out periodic maintenance on a chainsaw',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led (Theory + Practical)',
@@ -409,9 +413,11 @@ export const programs: Program[] = [
     description:
       'Identify plant species relevant to herbicide application and vegetation management.',
     outcomes: [
-      'Identify common plant families and species',
-      'Distinguish target from non-target plants',
-      'Record plant identification findings accurately',
+      'Identify common indigenous trees, shrubs or herbaceous plants from the region',
+      'Show an understanding of the impact that alien and invasive vegetation have on nature areas',
+      'Recognise and identify alien vegetation in a nature area',
+      'Removal of alien vegetation from nature areas',
+      'Demonstrate knowledge of techniques to prevent regrowth of alien vegetation',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led (Theory + Field Practical)',
@@ -428,10 +434,10 @@ export const programs: Program[] = [
     description:
       'Safe and legal application of herbicides for vegetation management and invasive species control.',
     outcomes: [
-      'Understand herbicide types and modes of action',
-      'Apply herbicides safely with appropriate PPE',
-      'Mix and calibrate herbicide equipment',
-      'Comply with legal requirements for herbicide use',
+      'Prepare for chemical weed control',
+      'Apply chemicals to weeds',
+      'Practise safe work procedures when using agrochemicals',
+      'Maintain equipment',
     ],
     duration: '3 days',
     delivery: 'Instructor-Led (Theory + Practical)',
@@ -450,10 +456,8 @@ export const programs: Program[] = [
     description:
       'Use maps to access, communicate and navigate information concerning routes and locations in field environments.',
     outcomes: [
-      'Read and interpret topographic maps',
-      'Use a compass for navigation',
-      'Identify and communicate location coordinates',
-      'Plan routes for operational activities',
+      'Read, interpret and use maps to depict and make sense of real locations, distances and position',
+      'Draw maps according to scale',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led (Theory + Field Practical)',
@@ -469,9 +473,8 @@ export const programs: Program[] = [
     categoryLabel: 'Forestry, Agriculture & Field',
     description: 'Conduct basic map reading specific to forestry operations.',
     outcomes: [
-      'Read and understand forestry compartment maps',
-      'Navigate using maps within a forestry area',
-      'Report location and access information accurately',
+      'Read and interpret appropriate forestry maps',
+      'Apply map-reading skills',
     ],
     duration: '1 day',
     delivery: 'Instructor-Led',
@@ -488,10 +491,10 @@ export const programs: Program[] = [
     description:
       'Investigate workplace incidents and accidents systematically to determine root causes and prevent recurrence.',
     outcomes: [
-      'Understand legal requirements for incident investigation',
-      'Apply a structured investigation methodology',
-      'Identify root causes and contributing factors',
-      'Compile a professional incident investigation report',
+      'Explain specified requirements pertaining to conducting an investigation into workplace incidents',
+      'Prepare to gather data for the investigation',
+      'Gather and evaluate data',
+      'Perform post-investigation functions',
     ],
     duration: '1 day',
     delivery: 'Instructor-Led',
@@ -508,10 +511,8 @@ export const programs: Program[] = [
     description:
       'Communicate effectively using a two-way radio in field and operational environments.',
     outcomes: [
-      'Understand radio communication protocols',
-      'Operate a two-way radio correctly',
-      'Follow radio etiquette and call procedures',
-      'Communicate emergency situations via radio',
+      'Communicate messages via radio',
+      'Establish reasons for varying signal strengths and take corrective actions',
     ],
     duration: '1 day',
     delivery: 'Instructor-Led',
@@ -691,9 +692,9 @@ export const programs: Program[] = [
     description:
       'Identify engineering tools, materials and equipment and explain the purpose and function of each.',
     outcomes: [
-      'Identify common engineering tools by name and function',
-      'Select the correct tool for each task',
-      'Understand basic tool maintenance and safe storage',
+      'Identify tools used in an engineering environment',
+      'Identify equipment used in an engineering environment',
+      'Identify materials used in an engineering environment',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led (Theory + Practical)',
@@ -710,9 +711,9 @@ export const programs: Program[] = [
     description:
       'Understand and apply principles of personal financial management.',
     outcomes: [
-      'Understand income and expenditure',
-      'Create and manage a personal budget',
-      'Understand debt and credit management',
+      'Prepare a personal budget',
+      'Open a personal bank account',
+      'Improve your financial situation',
     ],
     duration: '1 day',
     delivery: 'Instructor-Led',
@@ -729,10 +730,10 @@ export const programs: Program[] = [
     description:
       'Plan and manage personal finances through budgeting, savings and financial goal-setting.',
     outcomes: [
-      'Set financial goals and create a plan',
-      'Build an emergency fund and savings habit',
-      'Understand basic investment principles',
-      'Manage and systematically reduce personal debt',
+      'Explain the importance of managing personal finances',
+      'Set personal financial goals',
+      'Identify ways to achieve personal financial goals',
+      'Develop a personal and/or family budget',
     ],
     duration: '2 days',
     delivery: 'Instructor-Led',
@@ -749,10 +750,10 @@ export const programs: Program[] = [
     description:
       'Develop learners as peer educators to support and educate their peers on key social and health topics.',
     outcomes: [
-      'Understand the role of a peer educator',
-      'Apply communication and facilitation skills',
-      'Support peers on health and life skills topics',
-      'Refer peers to appropriate support services',
+      'Identify and describe the roles and responsibilities of a peer educator within a specific context',
+      'Plan and organise a peer education session',
+      'Identify and apply methodologies to facilitate a peer education session',
+      'Compile a report on the peer education session',
     ],
     duration: '3 days',
     delivery: 'Instructor-Led',
