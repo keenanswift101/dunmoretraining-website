@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     'chainsaw operator',
     'DUNMORE training',
   ],
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_ZA',
@@ -45,6 +50,21 @@ export const metadata: Metadata = {
     title: 'DUNMORE Training & Skills Development',
     description:
       'SETA-accredited training provider — First Aid, Fire Fighting, Health & Safety, Forestry & Event Medic Services.',
+    images: [
+      {
+        url: '/logo.png',
+        width: 512,
+        height: 512,
+        alt: 'DUNMORE Training & Skills Development',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'DUNMORE Training & Skills Development',
+    description:
+      'SETA-accredited training provider — First Aid, Fire Fighting, Health & Safety, Forestry & Event Medic Services.',
+    images: ['/logo.png'],
   },
 }
 
