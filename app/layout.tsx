@@ -45,14 +45,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_ZA',
-    url: 'https://www.dunmore.co.za',
+    url: 'https://dunmore.netlify.app',
     siteName: 'DUNMORE Training & Skills Development',
     title: 'DUNMORE Training & Skills Development',
     description:
       'SETA-accredited training provider — First Aid, Fire Fighting, Health & Safety, Forestry & Event Medic Services.',
     images: [
       {
-        url: '/logo.png',
+        url: 'https://dunmore.netlify.app/logo.png',
         width: 512,
         height: 512,
         alt: 'DUNMORE Training & Skills Development',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: 'DUNMORE Training & Skills Development',
     description:
       'SETA-accredited training provider — First Aid, Fire Fighting, Health & Safety, Forestry & Event Medic Services.',
-    images: ['/logo.png'],
+    images: ['https://dunmore.netlify.app/logo.png'],
   },
 }
 
